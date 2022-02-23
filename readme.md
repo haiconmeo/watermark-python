@@ -17,3 +17,5 @@
 ## run api 
 
     uvicorn main:app --reload
+    
+https://wednes.pw/
