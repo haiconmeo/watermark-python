@@ -1,4 +1,3 @@
-from http.client import HTTPResponse
 import cv2
 from fastapi import FastAPI, File, HTTPException
 from fastapi.responses import StreamingResponse
@@ -9,7 +8,6 @@ app = FastAPI()
 
 with open('mask_a.npy', 'rb') as f:
     mask_a = np.load(f)
-    print(mask_a.shape)
 
 with open('mask_b.npy', 'rb') as f:
     mask_b = np.load(f)
